@@ -45,6 +45,8 @@ deb32 = res[-1]
 
 str_mx2 = re.compile('href="(spotify-client.*?amd64.deb)"')
 res2 = str_mx2.findall(html.text)
+print (res2)
+print (res2[-1])
 deb64 = res2[-1]
 (version64, minor64) = regexp.findall(deb64)[0]
 #print ("Version amd64: %s %s %s" % (deb64, version64, minor64))
