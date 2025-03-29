@@ -32,7 +32,7 @@ match = re.search(r'^Source2:.*spotify-client_(\S+)[.]g', spec, re.MULTILINE)
 current_version2 = match.group(1)
 print("Current Version: %s and i686 version %s " % (current_version, current_version2))
 
-html = requests.get('http://repository.spotify.com/pool/non-free/s/spotify-client/')
+html = requests.get('https://repository.spotify.com/pool/non-free/s/spotify-client/')
 #print (html.text)
 
 regexp = re.compile(r'spotify-client_(\d{1,2}[.]\d{1,2}[.]\d{1,3}[.]\d{1,4})([.].*)')
