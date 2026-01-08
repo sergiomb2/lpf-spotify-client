@@ -42,7 +42,7 @@ headers = {
     "Sec-Fetch-Mode": "navigate",
     "Sec-Fetch-Site": "cross-site",
 }
-url = "https://repository-origin.spotify.com/pool/non-free/s/spotify-client/"
+url = "https://repository.spotify.com/pool/non-free/s/spotify-client/"
 html = requests.get(url , headers=headers)
 print(html.headers, "\n")
 regexp = re.compile(r'spotify-client_(\d{1,2}[.]\d{1,2}[.]\d{1,3}[.]\d{1,4})([.].*)')
